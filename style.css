@@ -343,6 +343,7 @@ footer a{
 }
 
 .loader-centrado{
+  position: absolute;
   z-index: 20;
   background-color: black;
   height: 100vh;
