@@ -209,7 +209,7 @@ color: black;
 .btn:hover > .btn-red{
   opacity: 0.7;
    filter: blur(0);
-  padding-left: 150px;
+  padding-left: 20%;
 }
 
 .btn-volver{
