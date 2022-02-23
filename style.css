@@ -89,7 +89,7 @@ width: 100%;
 
 @media screen and (min-height: 1080px){
   .video{
-    transform: scale(1.7);
+    transform: scale(1.5);
   }
 }
 
@@ -124,12 +124,17 @@ color: black;
   font-weight: bolder;
   text-align: center;
 }
-.usuario p{
+.usuario h2{
   font-weight: normal;
   text-align: center;
+  font-size: 14px;
 }
 
-
+.sub-titulo{
+  font-size: 17px;
+  margin: 0;
+  align-self: center;
+}
 
 .btn{
   display: grid;
@@ -139,10 +144,10 @@ color: black;
   min-width: 300px;
   border: none;
   background-color: rgba(230, 230, 230, 0.75);
-  border-radius: 30px;
   transition: 0.3s;
   box-shadow: rgb(38 50 56 / 16%) 0px 8px 16px, rgb(0 0 0 / 30%) 0px 4px 5px -4px, rgb(255 255 255 / 50%) 0px 2px 5px inset, rgb(0 0 0 / 20%) 0px -1px 3px inset;
 }
+
 
 .btn:hover{
   transform: scale(1.1);
@@ -180,7 +185,6 @@ color: black;
   min-width: 300px;
   border: none;
   background-color: rgba(230, 230, 230, 0.75);
-  border-radius: 30px;
   transition: 0.3s;
   box-shadow: rgb(38 50 56 / 16%) 0px 8px 16px, rgb(0 0 0 / 30%) 0px 4px 5px -4px, rgb(255 255 255 / 50%) 0px 2px 5px inset, rgb(0 0 0 / 20%) 0px -1px 3px inset;
   text-align: center;
@@ -269,6 +273,13 @@ color: black;
    filter: blur(0);
   padding-left: 0px;
 }
+.volver{
+  width: 200px;
+  min-width: 230px;
+}
+.btn-volver-cel{
+    padding-right: 130px;
+}
 }
 
 footer{
@@ -295,4 +306,3 @@ footer a{
   color: black;
   font-weight: bold;
 }
-
