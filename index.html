@@ -56,9 +56,55 @@
 
     <div class="container">
         <div class="btn"><img class="btn-red btn-red-cel" src="media/insta.png"><a href="https://www.instagram.com/_eldev/" target="_blank"><p>Instagram</p></a></div>
-        <div class="btn"><img class="btn-red btn-red-cel" src="media/info.PNG"><a href="info.html" target=""><p>¿Que hacemos?</p></a></div>
-        <div class="btn"><img class="btn-red" src="media/como.PNG"><a href="incluye.html" target=""><p>¿Como lo hacemos y que incluye?</p></a></div>
-        <div class="btn"><img class="btn-red" src="media/mantenimiento.PNG"><a href="pyn.html" target=""><p>Metodo de mantenimiento PYN</p></a></div>
+        <div class="btn" onclick="mostrarInfo()"><img class="btn-red btn-red-cel" src="media/info.PNG"><p>¿Que hacemos?</p></div>
+
+            <div id="info-text">
+            <div class="btn-text">
+              <img class="btn-red" src="">
+              <p>Creamos una antesala virtual, ordenamos todas tus opciones unificadas en un solo link totalmente personalizable. Ya sean redes sociales, distintos tipos de productos o servicios o simplemente dar informacion segmentada.</p>
+              <p>Generamos un lugar donde a las personas le sea mas intuituva la interaccion.</p>
+            </div>
+              <div class="btn volver" onclick="cerrarInfo()"><img class="cerrar" src="media/cerrar.png"></div>
+            </div>
+
+
+        <div class="btn" onclick="mostrarIncluye()"><img class="btn-red" src="media/como.PNG"><p>¿Como lo hacemos y que incluye?</p></div>
+
+            <div id="incluye-text">
+                  <div class="btn-text"><img class="btn-red" src=""><p>Nos ponemos en contacto con vos y te realizamos el sitio totalmente personalizado a gusto. Este servicio incluye:</p>
+                    <div class="lista">
+                      <ul class="ul">
+                        <li>Links</li>
+                        <li>Botones</li>
+                        <li>Foto/Video de perfil</li>
+                        <li>Imagen o video de Fondo</li>             
+                        <li>Titulo de la Pagina</li>
+                        <li>Configuracion de Preload</li>
+                      </ul> 
+                      <ul class="ul">
+                        <li>Página Responsive</li>              
+                        <li>Estructura de la página</li>
+                        <li>Codigo QR</li>
+                        <li>Dominio .com.ar</li>
+                        <li>Cambio de Links</li>
+                        <li>2 Semanas de Edicion</li>             
+                      </ul>
+                    </div>
+                    <p>Luego de la entrega, se le daran las 2 semanas de edicion. Una vez terminadas estas 2 semanas entra en accion el mantenimiento con metodo PYN <a href="pyn.html" class="hipervinculo"><strong>(Pay You Need)</strong></a>.</p>
+                    <h3 style="margin-bottom: 0">¿Como se hacen los cambios?</h3>
+                    <p style="margin-top:5px">Se le brindara un numero de Whatsapp que alli se les atendera las dudas y cambios a realizar. O mediante correo electronico. Usamos estos metodos por la alta posibilidad de personalizacion.</p>
+                  </div>
+              <div class="btn volver" onclick="cerrarIncluye()"><img class="cerrar" src="media/cerrar.png"></div>
+            </div>
+
+         <div class="btn" onclick="mostrarPyn()"><img class="btn-red" src="media/mantenimiento.PNG"><p>Metodo de mantenimiento PYN</p></div>
+
+           <div id="pyn-text"> 
+             <div class="btn-text"><img class="btn-red" src=""><p>En comparacion al resto de servicios que cobran una mensualidad, nosotros usamos el metodo PYN (Pay you Need), esto quiere decir que solo pagas cuando necesitas hacer algun cambio, tales como redimensionar botones o logo, cambiar fondo o foto/video de perfil, cambiar titulo de pagina, etc. (recorda que el cambio de links esta incluido en el precio pincipal).</p>
+                <p>Pagas cuando necesitas quiere decir que, realizado el pago se te dan 30 dias de mantenimento, en estos dias podes hacer todos los cambios que quieras, una vez terminado los 30 dias, tenes que volver a pagar solamente cuando quieras volver a editar, es decir, podes estar meses sin pagar.</p></div>
+             <div class="btn volver" onclick="cerrarPyn()"><img class="cerrar" src="media/cerrar.png"></div>   
+           </div>
+
         <div class="btn"><img class="btn-red btn-red-cel" src="media/clientes.PNG"><a href="clientes.html" target=""><p>Nuestros Clientes</p></a></div>
 
     </div>

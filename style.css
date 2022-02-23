@@ -177,6 +177,10 @@ color: black;
   text-align: center;
   z-index: 15;
 }
+.btn p{
+  justify-self:center;
+  align-self: center;
+}
 .btn-text{
   display: grid;
   align-self: center;
@@ -193,8 +197,15 @@ color: black;
   padding: 0 15px 0 15px;
 }
 .volver{
-  width: 250px;
+  width:50px;
   justify-self:center;
+  min-width: 50px;
+  height: 50px;
+  justify-self:center;
+  margin: none;
+  border-radius: 50%;
+ margin-top: 15px;
+   background-color: rgba(230, 230, 230, 0.40);
 }
 
 .btn-red{
@@ -274,8 +285,8 @@ color: black;
   padding-left: 0px;
 }
 .volver{
-  width: 200px;
-  min-width: 230px;
+  width: 50px;
+  min-width: 50px;
 }
 .btn-volver-cel{
     padding-right: 130px;
@@ -355,4 +366,26 @@ footer a{
 
 .hidden{
   overflow: hidden;
+}
+
+#info-text{
+  display: none;
+}
+#incluye-text{
+  display: none;
+}
+#pyn-text{
+  display: none;
+}
+.cerrar{
+  height: 30px;
+  opacity: .5;
+  align-self: center;
+  justify-self:center;
+}
+
+.volver-cliente{
+  width: 250px;
+  border-radius: 0;
+  margin-top: 0;
 }
