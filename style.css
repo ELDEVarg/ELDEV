@@ -152,7 +152,6 @@ color: black;
 }
 .btn:active{
   transform: scale(0.98);
-  background-color: rgba(0, 0, 0, 0.90);
   box-shadow: rgb(38 50 56 / 16%) 0px 10px 18px, rgb(0 0 0 / 30%) 0px 5px 6px -4px, rgb(255 255 255 / 50%) 0px 2px 5px inset, rgb(0 0 0 / 20%) 0px -1px 3px inset;
 
 }
@@ -231,6 +230,28 @@ color: black;
 }*/
 .ul{
   font-size: 12px;
+}
+
+.btn-red-cel{
+  background-size: cover;
+  height: 30px;
+  position: absolute;
+  align-self: center;
+  justify-self:center;
+  padding-top: 3px;
+  opacity: 0.5;
+  padding-right: 180px;
+  filter: blur(0.1px);
+}
+.btn:hover > .btn-red{
+  opacity: 0;
+   filter: blur(0);
+  padding-left: 0px;
+}
+.btn:active > .btn-red{
+  opacity: 0;
+   filter: blur(0);
+  padding-left: 0px;
 }
 }
 
