@@ -212,6 +212,22 @@ color: black;
   padding-left: 150px;
 }
 
+.btn-volver{
+  background-size: cover;
+  height: 30px;
+  position: absolute;
+  filter: blur(2px);
+  transition: 0.3s;
+  align-self: center;
+  justify-self:start;
+  padding-top: 3px;
+  opacity: 0;
+}
+.btn:hover > .btn-volver{
+    opacity: 0.7;
+   filter: blur(0);
+  padding-left: 50px;
+}
 .ul{
   font-size: 14px;
   margin-top: 0;
