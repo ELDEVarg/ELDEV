@@ -5,6 +5,10 @@ body{
 }
 
 
+/*-----------MAIN--------------*/
+.body{
+  display: grid;
+}
 .main{
   margin: 0;
   display: grid;
@@ -34,6 +38,34 @@ body{
  align-self: start;
 }
 
+@media screen and (max-width: 720px){
+          .main{
+            margin: 0;
+            padding-top: 0;
+            display: grid;
+            justify-items:center;
+            background-size: cover;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            z-index: 10;
+            position: relative;
+            align-self: center;
+
+          }
+          .encabezado{
+            display: grid;
+            align-items: center;
+            justify-items:center;
+            padding-left: 0;
+
+          }
+          .container{
+            align-self: start;
+            margin-top: 0;
+          }
+}
+
+/*--------BACKGROUND-------------*/
 .video{
 
 z-index: 1;
@@ -57,35 +89,7 @@ height: 100%;
 width: 100%;
 }
 
-@media screen and (max-width: 720px){
-.main{
-  margin: 0;
-  padding-top: 0;
-  display: grid;
-  justify-items:center;
-  background-size: cover;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  z-index: 10;
-  position: relative;
-  align-self: center;
 
-}
-.encabezado{
-  display: grid;
-  align-items: center;
-  justify-items:center;
-  padding-left: 0;
-
-}
-.container{
-  align-self: start;
-  margin-top: 0;
-}
-
-
-
-}
 
 @media screen and (min-height: 1080px){
   .video{
@@ -93,6 +97,8 @@ width: 100%;
   }
 }
 
+
+/*--------ENCABEZADO--------*/
 .foto{
   height: 200px;
   width: 200px;
@@ -105,10 +111,6 @@ width: 100%;
   z-index: 10;
   position: relative;
   display: grid;
-}
-.foto video{
-
-
 }
 
 .usuario{
@@ -136,6 +138,7 @@ color: black;
   align-self: center;
 }
 
+/*----------------BOTONERA------------------------*/
 .btn{
   display: grid;
   align-self: center;
@@ -147,8 +150,21 @@ color: black;
   transition: 0.3s;
   box-shadow: rgb(38 50 56 / 16%) 0px 8px 16px, rgb(0 0 0 / 30%) 0px 4px 5px -4px, rgb(255 255 255 / 50%) 0px 2px 5px inset, rgb(0 0 0 / 20%) 0px -1px 3px inset;
 }
-
-
+.volver{
+  width:50px;
+  justify-self:center;
+  min-width: 50px;
+  height: 50px;
+  margin: none;
+  border-radius: 50%;
+  margin-top: 15px;
+  background-color: rgba(230, 230, 230, 0.40);
+}
+.volver-cliente{
+  width: 250px;
+  border-radius: 0;
+  margin-top: 0;
+}
 .btn:hover{
   transform: scale(1.1);
   background-color: rgba(250, 250, 250, 0.90);
@@ -197,17 +213,15 @@ color: black;
 .btn-text p{
   padding: 0 15px 0 15px;
 }
-.volver{
-  width:50px;
-  justify-self:center;
-  min-width: 50px;
-  height: 50px;
-  justify-self:center;
-  margin: none;
-  border-radius: 50%;
- margin-top: 15px;
-   background-color: rgba(230, 230, 230, 0.40);
+
+hr{
+  width: 200px;
+  height: 2px;
+  background-color: black;
+  border: none;
+
 }
+
 
 .btn-red{
   background-size: cover;
@@ -248,59 +262,85 @@ color: black;
   font-size: 14px;
   margin-top: 0;
 }
-@media screen and (max-width: 720px){
-/*.btn-red{
-  background-size: cover;
-  height: 30px;
-  position: absolute;
-  align-self: center;
-  justify-self:center;
-  padding-top: 3px;
-  opacity: 0.5;
-  padding-right: 150px;
-  filter: blur(0.1px);
-}*/
-.btn-text p{
-  font-size: 12px;
-}
-.ul{
-  font-size: 10px;
-}
 
-.btn-red-cel{
-  background-size: cover;
-  height: 30px;
-  position: absolute;
-  align-self: center;
-  justify-self:center;
-  padding-top: 3px;
-  opacity: 0.5;
-  padding-right: 180px;
-  filter: blur(0.1px);
-}
-.btn:hover > .btn-red{
-  opacity: 0;
-   filter: blur(0);
-  padding-left: 0px;
-}
-.btn:active > .btn-red{
-  opacity: 0;
-   filter: blur(0);
-  padding-left: 0px;
-}
-.volver{
-  width: 50px;
-  min-width: 50px;
-}
-.btn-volver-cel{
-    padding-right: 130px;
-}
-}
-
-
-.body{
+.lista{
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: start;
 }
+
+#info-text{
+  display: none;
+}
+#incluye-text{
+  display: none;
+}
+#pyn-text{
+  display: none;
+}
+.cerrar{
+  height: 30px;
+  opacity: .5;
+  align-self: center;
+  justify-self:center;
+}
+
+
+@media screen and (max-width: 720px){
+      /*.btn-red{
+        background-size: cover;
+        height: 30px;
+        position: absolute;
+        align-self: center;
+        justify-self:center;
+        padding-top: 3px;
+        opacity: 0.5;
+        padding-right: 150px;
+        filter: blur(0.1px);
+      }*/
+      .btn-text p{
+        font-size: 12px;
+      }
+      .ul{
+        font-size: 10px;
+      }
+
+      .btn-red-cel{
+        background-size: cover;
+        height: 30px;
+        position: absolute;
+        align-self: center;
+        justify-self:center;
+        padding-top: 3px;
+        opacity: 0.5;
+        padding-right: 180px;
+        filter: blur(0.1px);
+      }
+      .btn:hover > .btn-red{
+        opacity: 0;
+         filter: blur(0);
+        padding-left: 0px;
+      }
+      .btn:active > .btn-red{
+        opacity: 0;
+         filter: blur(0);
+        padding-left: 0px;
+      }
+      .volver{
+        width: 50px;
+        min-width: 50px;
+      }
+      .volver-cliente{
+        width: 200px;
+      }
+      .btn-volver-cel{
+          padding-right: 130px;
+      }
+
+}
+
+
+/*---------FOOTER---------*/
 footer{
   position: relative;
   z-index: 15;
@@ -315,17 +355,7 @@ footer a{
   color: black;
 }
 
-.lista{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: start;
-}
-
-.hipervinculo{
-  color: black;
-  font-weight: bold;
-}
-
+/*----------------PRELOADER--------------------*/
 .lds-ripple {
   display: inline-block;
   position: relative;
@@ -374,24 +404,6 @@ footer a{
   overflow: hidden;
 }
 
-#info-text{
-  display: none;
-}
-#incluye-text{
-  display: none;
-}
-#pyn-text{
-  display: none;
-}
-.cerrar{
-  height: 30px;
-  opacity: .5;
-  align-self: center;
-  justify-self:center;
-}
 
-.volver-cliente{
-  width: 250px;
-  border-radius: 0;
-  margin-top: 0;
-}
+
+

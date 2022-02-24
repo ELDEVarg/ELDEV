@@ -22,41 +22,63 @@
 
 
 
-<body>
+<body class="hidden">
 
-  <div class="video">
-    <video autoplay muted loop>
-      <source src="media/Pattern.mp4">
-    </video>
-  </div>
-
-  <div class="main">
-    
-    <div class="encabezado">
-      <div class="foto">
-        <video src="media/logo.mp4" autoplay loop muted style="border-radius: 50%" >
-        </video>
+  <!---------------LOADER------------------------------------>
+  <div class="loader-centrado" id="onload">
+    <div class="lds-ripple">
+      <div>
       </div>
-
-      <div class="usuario">
-        <h1>@_ELDEV</h1>
-        <h2>Todos tus opciones unificadas en un solo link</h2>
+      <div>     
       </div>
-    </div> 
-
-
-    <div class="container">
-        <div class="btn"><img class="btn-red btn-red-cel" src="media/iljo.png"><a href="https://eldevarg.github.io/ILJO/" target="_blank"><p>ILJO Urbano</p></a></div>
-        <div class="btn"><img class="btn-red btn-red-cel" src="media/gogo.png"><a href="https://eldevarg.github.io/GoGo/" target="_blank"><p>GoGo Burgers</p></a></div>
-
-     <div class="btn volver volver-cliente"><img class="btn-volver btn-red-cel btn-volver-cel" src="media/volver.png"><a href="index.html" target=""><p>Volver</p></a></div>
     </div>
+  </div>
+
+<!-------------------BACKGROUND-------------------------------------->
+  <div class="body">
+          <div class="video">
+          <video autoplay muted loop>
+            <source src="media/Pattern.mp4">
+          </video>
+        </div>
+
+<!--------------------MAIN-------------------------->
+      <div class="main">
+
+    <!--------ENCABEZADO----------->
+            <div class="encabezado">
+              <div class="foto">
+                <video src="media/logo.mp4" autoplay loop muted style="border-radius: 50%" >
+                </video>
+              </div>
+
+              <div class="usuario">
+                <h1>@_ELDEV</h1>
+                <h2>Todos tus opciones unificadas en un solo link</h2>
+              </div>
+            </div> 
+
+    <!---------BOTONERA------------>
+          <div class="container">
+              <div class="btn"><img class="btn-red btn-red-cel" src="media/iljo.png"><a href="https://eldevarg.github.io/ILJO/" target="_blank"><p>ILJO Urbano</p></a></div>
+              <div class="btn"><img class="btn-red btn-red-cel" src="media/gogo.png"><a href="https://eldevarg.github.io/GoGo/" target="_blank"><p>GoGo Burgers</p></a></div>
+
+           <div class="btn volver volver-cliente"><img class="btn-volver btn-red-cel btn-volver-cel" src="media/volver.png"><a href="index.html" target=""><p>Volver</p></a></div>
+          </div>
+
+
+      </div>
+
+  <!---------------FOOTER--------->
+         <footer>
+           <p>Desarrollado por <strong><a href="">ELDEV</a></strong></p>
+         </footer>
 
 
   </div>
-   <footer>
-     <p>Desarrollado por <strong><a href="">ELDEV</a></strong></p>
-   </footer>
 
 
+  <!----------JAVASCRIPT---------->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="codigo.js"></script>
 </body>
