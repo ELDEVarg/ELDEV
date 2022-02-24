@@ -29,3 +29,12 @@ function cerrarPyn(){
 	document.getElementById('pyn-text').style.display = 'none';
 	document.getElementById('pyn-titulo').style.display = 'grid';
 }
+
+function mostrarEj(){
+	document.getElementById('ejemplo').style.display = 'grid';
+	document.getElementById('ej-btn').style.display = 'none';
+}
+function cerrarEj(){
+	document.getElementById('ejemplo').style.display = 'none';
+	document.getElementById('ej-btn').style.display = 'grid';
+}
