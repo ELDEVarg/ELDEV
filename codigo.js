@@ -30,11 +30,13 @@ function cerrarPyn(){
 	document.getElementById('pyn-titulo').style.display = 'grid';
 }
 
-function mostrarEj(){
-	document.getElementById('ejemplo').style.display = 'grid';
-	document.getElementById('ej-btn').style.display = 'none';
+function mostrarCliente(){
+	document.getElementById('cliente1').style.display = 'grid';
+	document.getElementById('cliente2').style.display = 'grid';
+	document.getElementById('cerrarCliente').style.display = 'grid';
 }
-function cerrarEj(){
-	document.getElementById('ejemplo').style.display = 'none';
-	document.getElementById('ej-btn').style.display = 'grid';
+function cerrarCliente(){
+	document.getElementById('cliente1').style.display = 'none';
+	document.getElementById('cliente2').style.display = 'none';
+	document.getElementById('cerrarCliente').style.display = 'none';
 }

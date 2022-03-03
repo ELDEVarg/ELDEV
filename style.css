@@ -151,6 +151,7 @@ color: black;
   transition: 0.3s;
   box-shadow: rgb(38 50 56 / 16%) 0px 8px 16px, rgb(0 0 0 / 30%) 0px 4px 5px -4px, rgb(255 255 255 / 50%) 0px 2px 5px inset, rgb(0 0 0 / 20%) 0px -1px 3px inset;
   cursor: pointer;
+  border-radius: 10px;
 }
 .volver{
   width:50px;
@@ -212,6 +213,7 @@ color: black;
   box-shadow: rgb(38 50 56 / 16%) 0px 8px 16px, rgb(0 0 0 / 30%) 0px 4px 5px -4px, rgb(255 255 255 / 50%) 0px 2px 5px inset, rgb(0 0 0 / 20%) 0px -1px 3px inset;
   text-align: center;
   font-size: 14px;
+  border-radius: 10px;
 }
 .btn-text p{
   padding: 0 15px 0 15px;
@@ -281,6 +283,25 @@ hr{
 #pyn-text{
   display: none;
 }
+#cliente1{
+  display: none;
+}
+#cliente2{
+  display: none;
+}
+#cerrarCliente{
+  display: none;
+  margin-top: 0;
+  
+}
+.cliente{
+   width: 30vw;
+   justify-self:center;
+}
+
+.btn-fondo{
+  background-color: white;
+}
 .cerrar{
   height: 30px;
   opacity: .5;
@@ -337,7 +358,11 @@ hr{
         min-width: 50px;
       }
       .volver-cliente{
-        width: 200px;
+        margin-top: 0;
+        border-radius: 50%;
+      }
+      .cliente{
+        min-width: 250px;
       }
       .btn-volver-cel{
           padding-right: 130px;
@@ -346,6 +371,7 @@ hr{
       .btn:hover > .btn-volver{
         padding-left: 0px;
       }
+
 }
 
 
